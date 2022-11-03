@@ -1,0 +1,51 @@
+body,* {
+	padding:0;
+	margin:0;
+	/* background-color: rgb(237,229,226); */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* ==== Banner ==== */
+.banner {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ==== filter card categories ==== */
+.filter {
+	/* margin-top: 100px; */
+    font-family: Montserrat;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+#myBtnContainer {
+	margin:20px;
+}
+.filterDiv {
+	display:none;
+}
+.show {
+	display:block;
+}
+.btn {
+	border:none;
+	outline:none;
+	background-color:#f1f1f1;
+	cursor:pointer;
+	font-size:medium;
+	margin:3px;
+}
+.btn:hover {
+	background-color:#ddd;
+}
+.btn.active {
+	background-color:#666;
+	color: white;
+}
+
+      

@@ -1,0 +1,9 @@
+footer {
+    background: linear-gradient(90deg, rgba(255, 219, 90, 0.5) 0%, rgba(255, 219, 90, 0.2) 54.51%, rgba(255, 219, 90, 0.5) 100%);
+}
+
+footer h5 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 600;
+    color: #492700;
+}

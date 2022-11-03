@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!-- ==== Reload component for header and navbar  ==== -->
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<!-- ==== Bootstrap CDN ==== -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"/>
+<!-- ==== Modal ==== -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- ==== CSS ==== -->
+<link href="css/project.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="css/navbar.css"/>
+<link rel="stylesheet" href="/css/footer.css"/>
+<!-- ==== Font ==== -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Montserrat"/>
+<!-- ==== Icon ==== -->
+<script src="https://kit.fontawesome.com/e387e799bf.js" crossorigin="anonymous"></script>
+<!-- ==== Carousel CDN ==== -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+<title>Project</title>
+</head>
+<body>
+<div class=" .bg-secondary.bg-gradient">
+	<!-- ==== Navbar ==== -->
+	<div id="navbar-placeholder"></div>
+	<script>
+      $(function () {
+        $("#navbar-placeholder").load("components/navbar.html");
+      });
+    </script>
+	<!-- ==== Banner ==== -->
+	<div class="card mb-3 border-0 rounded-0">
+		<img src="/resources/banner-1.jpg" style="height: 400px;" class="card-img-top rounded-0 " alt="Picture"/>
+	</div>
+	<!-- ==== Carousel ==== -->
+	<div class="text-center m-3 mt-5 ">
+		<div class="row">
+			<div class="col-sm-8">
+				<div class="card">
+					<img src="/resources/pexels-jonathan-borba-3397026.jpg" class="img-fluid rounded-3" alt="Picture">
+				</div>
+				<div class="main-content">
+					<div id="carousel-2" class="owl-carousel owl-theme">
+						<div class="item">
+							<img src="/resources/Dark_Flower-3.png" alt="Picture"/>
+						</div>
+						<div class="item">
+							<img src="/resources/Elegant_Green-1.jpg" alt="Picture"/>
+						</div>
+						<div class="item">
+							<img src="/resources/gold-elegant-7.png" alt="Picture"/>
+						</div>
+						<div class="item">
+							<img src="/resources/Dark_Flower-3.png" alt="Picture"/>
+						</div>
+						<div class="item">
+							<img src="/resources/blue-4.jpg" alt="Picture"/>
+						</div>
+						<div class="item">
+							<img src="/resources/Dark_Flower-3.png" alt="Picture"/>
+						</div>
+						<div class="item">
+							<img src="/resources/gold-elegant-5.png" alt="Picture"/>
+						</div>
+					</div>
+					<div class="owl-theme">
+						<div class="owl-controls">
+							<div id="carousel-2-nav" class="custom-nav owl-nav"></div>
+						</div>
+					</div>
+				</div>
+				<!-- Project Description -->
+				<div class="card mt-4 border-0 border-bottom" style="width: 50rem;">
+					<div class="card-body text-start">
+						<h5 class="card-title">Project Description</h5>
+						<p class="card-text">
+							 Kami menyediakan puluhan tema undangan website. Kamu dapat menampilkan preview dari masing-masing tema yang tersedia pada halaman ini. Silahkan pilih kategori Website Katalog untuk menampilkan demo website.
+						</p>
+					</div>
+				</div>
+				<!-- Recent Project -->
+				<div class="card mt-4 p-3 border-0 text-start">
+					<h5 class="card-title p-1">Recent Projects</h5>
+					<div class="row row-cols-1 row-cols-md-3 g-4">
+						<div class="btn col p-3 pt-1">
+							<div id="myBtn" class="card h-100">
+								<img src="/resources/gambar-11.png" class="card-img-top" alt="Picture">
+							</div>
+						</div>
+						<div class="col p-3 pt-1">
+							<div class="card h-100">
+								<img src="/resources/gambar-12.jpg" class="card-img-top" alt="Picture">
+							</div>
+						</div>
+						<div class="col p-3 pt-1">
+							<div class="card h-100">
+								<img src="/resources/gambar-11.png" class="card-img-top" alt="Picture">
+							</div>
+						</div>
+						<!-- Modal -->
+						<div class="modal fade" id="myModal" role="dialog">
+							<div class="modal-dialog">
+								<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header" style="padding:40px 50px;">
+										<h4>Recent Project</h4>
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+									</div>
+									<div class="container modal-body" style="padding:40px 50px; margin: 8px;">
+										<img src="/resources/gambar-11.png" style="width: 60vh;" alt="Picture">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Project Detail -->
+			<div class="col-sm-4">
+				<div class="card border-0 text-start bg-warning bg-opacity-50">
+					<h5 class="card-title p-3">Project Detail</h5>
+					<div class="list-group p-3 pt-1">
+						<a href="#" class="list-group-item list-group-item-action">Hemat Biaya</a>
+						<a href="#" class="list-group-item list-group-item-action">Fitur Lengkap</a>
+						<a href="#" class="list-group-item list-group-item-action">Fleksibel</a>
+						<a href="#" class="list-group-item list-group-item-action">Pembuatan Cepat</a>
+					</div>
+				</div>
+				<!-- Popular Post -->
+				<div class="card border-0 mt-3 bg-warning bg-opacity-50">
+					<h5 class="card-title p-3 text-start">Popular Post</h5>
+					<div class="card mb-4 m-3" style="max-width: 540px">
+						<div class="row g-0">
+							<div class="col-md-4">
+								<img src="/resources/gambar-13.jpeg" class="img-fluid rounded-start m-2" alt="Picture"/>
+							</div>
+							<div class="col-md-8 text-start">
+								<div class="card-body">
+									<a href="#" class=" text-decoration-none"><h5 class=" card-title text-dark">Undangan Klasik</h5></a>
+									<p class="card-text">
+										<small class="text-muted">Oct 28, 2022<i class="fa-solid fa-heart p-3"></i>50</small>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card mb-4 m-3" style="max-width: 540px">
+						<div class="row g-0">
+							<div class="col-md-4">
+								<img src="/resources/gambar-14.jpeg" class="img-fluid rounded-start m-2" alt="Picture"/>
+							</div>
+							<div class="col-md-8 text-start">
+								<div class="card-body">
+									<a href="#" class=" text-decoration-none"><h5 class=" card-title text-dark">Undangan Istimewa</h5></a>
+									<p class="card-text">
+										<small class="text-muted">Oct 28, 2022<i class="fa-solid fa-heart p-3"></i>50</small>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card mb-4 m-3" style="max-width: 540px">
+						<div class="row g-0">
+							<div class="col-md-4">
+								<img src="/resources/gambar-15.jpeg" class="img-fluid rounded-start m-2" alt="Picture"/>
+							</div>
+							<div class="col-md-8 text-start">
+								<div class="card-body">
+									<a href="#" class="text-decoration-none"><h5 class="card-title text-dark">Undangan Viral</h5></a>
+									<p class="card-text">
+										<small class="text-muted">Oct 28, 2022<i class="fa-solid fa-heart p-3"></i>50</small>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Tags -->
+				<div class="card border-0 mt-3 bg-warning bg-opacity-50">
+					<h5 class="card-title p-3 text-start">Tags</h5>
+					<div class="container text-center p-3">
+						<div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
+							<div class="col">
+								<div class="p-3 border bg-light">
+									<a href="#" class="list-group-item list-group-item-action">Fitur 1</a>
+								</div>
+							</div>
+							<div class="col">
+								<div class="p-3 border bg-light">
+									<a href="#" class="list-group-item list-group-item-action">Fitur 2</a>
+								</div>
+							</div>
+							<div class="col">
+								<div class="p-3 border bg-light">
+									<a href="#" class="list-group-item list-group-item-action">Fitur 3</a>
+								</div>
+							</div>
+							<div class="col">
+								<div class="p-3 border bg-light">
+									<a href="#" class="list-group-item list-group-item-action">Fitur 4</a>
+								</div>
+							</div>
+							<div class="col">
+								<div class="p-3 border bg-light">
+									<a href="#" class="list-group-item list-group-item-action">Fitur 5</a>
+								</div>
+							</div>
+							<div class="col">
+								<div class="p-3 border bg-light">
+									<a href="#" class="list-group-item list-group-item-action">Fitur 6</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ==== Footer ====-->
+	<div id="footer-placeholder"></div>
+	<script>
+      $(() => {
+        $("#footer-placeholder").load("components/footers.html");
+      });
+    </script>
+	<!-- ==== Awal script Carousel ==== -->
+	<!-- ==== Carousel CDN ==== -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<!-- ==== Position Carousel ==== -->
+	<script>
+  $("#carousel-2").owlCarousel({
+    stagePadding: 50,
+    loop: true,
+    margin: 10,
+    dots: false,
+    nav: true,
+    navText: [
+      '<i class="fa-solid fa-chevron-left" aria-hidden="true"></i>',
+      '<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>',
+    ],
+    navContainer: "#carousel-2-nav",
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 5,
+      },
+    },
+  });
+	</script>
+	<!-- ==== Modal ==== -->
+	<script>
+        $(document).ready(function(){
+          $("#myBtn").click(function(){
+            $("#myModal").modal();
+          });
+        });
+        </script>
+	</body>
+	</html>
